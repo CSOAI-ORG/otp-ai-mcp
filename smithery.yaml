@@ -1,0 +1,10 @@
+name: otp-ai-mcp
+description: "MEOK AI Labs — otp-ai-mcp"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/otp-ai-mcp
+license: MIT
+categories: [Security, Authentication]
+tags: [otp, one-time-password, two-factor-auth, totp, hotp, 2fa]
+runtime: python
+entrypoint: server.py
