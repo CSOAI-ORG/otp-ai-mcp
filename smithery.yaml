@@ -1,10 +1,37 @@
 name: otp-ai-mcp
-description: "MEOK AI Labs — otp-ai-mcp"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/otp-ai-mcp
-license: MIT
-categories: [Security, Authentication]
-tags: [otp, one-time-password, two-factor-auth, totp, hotp, 2fa]
-runtime: python
-entrypoint: server.py
+description: "otp-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)"
+version: 1.0.0
+tools:
+- name: generate_secret
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: issuer
+    type: string
+    required: false
+- name: generate_totp
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: secret
+    type: string
+    required: true
+- name: verify_totp
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: secret
+    type: string
+    required: true
+  - name: code
+    type: string
+    required: true
+- name: generate_qr_uri
+  description: MEOK AI Labs tool.
+  parameters:
+  - name: secret
+    type: string
+    required: true
+  - name: account
+    type: string
+    required: true
+  - name: issuer
+    type: string
+    required: false
