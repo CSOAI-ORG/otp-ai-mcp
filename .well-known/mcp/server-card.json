@@ -1,0 +1,53 @@
+{
+  "name": "otp-ai",
+  "description": "Generate and verify TOTP/HOTP one-time passwords with RFC 4226/6238 compliance. By MEOK AI Labs.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/otp-ai-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "generate_otp",
+      "description": "Generate a one-time password from a base32 secret. Supports TOTP (time-based) and HOTP (counter-based)."
+    },
+    {
+      "name": "verify_otp",
+      "description": "Verify a one-time password against a secret. Window parameter allows for clock drift (TOTP) or counter desync (HOTP)."
+    },
+    {
+      "name": "generate_secret",
+      "description": "Generate a cryptographically secure random secret for OTP. Returns base32-encoded secret."
+    },
+    {
+      "name": "get_qr_uri",
+      "description": "Generate an otpauth:// URI for QR code provisioning compatible with Google Authenticator, Authy, etc."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Security & Compliance"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
