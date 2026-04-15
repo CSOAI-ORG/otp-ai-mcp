@@ -1,5 +1,5 @@
 name: otp-ai-mcp
-description: "otp-ai-mcp \u2014 Built by [MEOK AI Labs](https://meok.ai)"
+description: "MEOK AI Labs \u2014 Generate and verify TOTP/HOTP codes."
 version: 1.0.0
 tools:
 - name: generate_secret
