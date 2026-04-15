@@ -1,1 +1,11 @@
-{"name":"otp-ai-mcp","version":"1.0.0","description":"MEOK AI Labs MCP","author":"MEOK AI Labs","license":"MIT","repository":{"type":"git","url":"https://github.com/CSOAI-ORG/otp-ai-mcp"}}
+{
+  "name": "otp-ai-mcp",
+  "version": "1.0.0",
+  "description": "Otp Ai MCP server. Tools: generate secret, generate totp, verify totp. Built by MEOK AI Labs.",
+  "author": "MEOK AI Labs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/otp-ai-mcp"
+  }
+}

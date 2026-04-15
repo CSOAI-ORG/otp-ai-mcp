@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 [project]
 name = "otp-ai-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — otp-ai-mcp"
+description = "Otp Ai MCP server. Tools: generate secret, generate totp, verify totp. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]

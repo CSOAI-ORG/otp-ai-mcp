@@ -1,6 +1,6 @@
 {
   "name": "otp-ai-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 MEOK AI Labs \u2014 Generate and verify TOTP/HOTP codes.",
+  "description": "Otp Ai MCP server. Tools: generate secret, generate totp, verify totp. Built by MEOK AI Labs.",
   "version": "1.0.0",
   "tools": [
     {
