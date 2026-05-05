@@ -1,52 +1,38 @@
-# OTP AI
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — Generate and verify TOTP/HOTP codes
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/otp-ai-mcp)](https://github.com/CSOAI-ORG/otp-ai-mcp/stargazers)
+
+# uotpU aiU mcp
+
+****
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/otp-ai-mcp)](https://www.npmjs.com/package/@meok-ai/otp-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/otp-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install otp-ai-mcp
+# or
+npm install -g @meok-ai/otp-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-python server.py
-```
+See the project repository for full documentation and examples.
 
-## Tools
+## Enterprise Support
 
-### `generate_secret`
-Generate a new TOTP secret for an issuer.
-
-**Parameters:**
-- `issuer` (str): Issuer name (default: "MEOK")
-
-### `generate_totp`
-Generate a time-based one-time password from a secret.
-
-**Parameters:**
-- `secret` (str): TOTP secret key
-
-### `verify_totp`
-Verify a TOTP code against a secret.
-
-**Parameters:**
-- `secret` (str): TOTP secret key
-- `code` (str): Code to verify
-
-### `generate_qr_uri`
-Generate an otpauth:// URI for QR code enrollment.
-
-**Parameters:**
-- `secret` (str): TOTP secret key
-- `account` (str): Account identifier
-- `issuer` (str): Issuer name (default: "MEOK")
-
-## Authentication
-
-Free tier: 30 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
