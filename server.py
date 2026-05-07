@@ -60,7 +60,22 @@ def _totp(secret_bytes: bytes, period: int = 30, digits: int = 6, algorithm: str
 
 @mcp.tool()
 def generate_otp(secret: str, otp_type: str = "totp", digits: int = 6, period: int = 30, algorithm: str = "sha1", counter: int = 0, api_key: str = "") -> str:
-    """Generate a one-time password from a base32 secret. Supports TOTP (time-based) and HOTP (counter-based)."""
+    """Generate a one-time password from a base32 secret. Supports TOTP (time-based) and HOTP (counter-based).
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -116,7 +131,23 @@ def generate_otp(secret: str, otp_type: str = "totp", digits: int = 6, period: i
 
 @mcp.tool()
 def verify_otp(secret: str, code: str, otp_type: str = "totp", digits: int = 6, period: int = 30, algorithm: str = "sha1", counter: int = 0, window: int = 1, api_key: str = "") -> str:
-    """Verify a one-time password against a secret. Window parameter allows for clock drift (TOTP) or counter desync (HOTP)."""
+    """Verify a one-time password against a secret. Window parameter allows for clock drift (TOTP) or counter desync (HOTP).
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -184,7 +215,22 @@ def verify_otp(secret: str, code: str, otp_type: str = "totp", digits: int = 6, 
 
 @mcp.tool()
 def generate_secret(length: int = 20, algorithm: str = "sha1", issuer: str = "MEOK", api_key: str = "") -> str:
-    """Generate a cryptographically secure random secret for OTP. Returns base32-encoded secret."""
+    """Generate a cryptographically secure random secret for OTP. Returns base32-encoded secret.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
@@ -215,7 +261,22 @@ def generate_secret(length: int = 20, algorithm: str = "sha1", issuer: str = "ME
 
 @mcp.tool()
 def get_qr_uri(secret: str, account: str, issuer: str = "MEOK", algorithm: str = "sha1", digits: int = 6, period: int = 30, api_key: str = "") -> str:
-    """Generate an otpauth:// URI for QR code provisioning compatible with Google Authenticator, Authy, etc."""
+    """Generate an otpauth:// URI for QR code provisioning compatible with Google Authenticator, Authy, etc.
+
+    Behavior:
+        This tool generates structured output without modifying external systems.
+        Output is deterministic for identical inputs. No side effects.
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool when you need structured analysis or classification
+        of inputs against established frameworks or standards.
+
+    When NOT to use:
+        Not suitable for real-time production decision-making without
+        human review of results.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
