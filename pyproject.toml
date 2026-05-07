@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 [project]
 name = "otp-ai-mcp"
-version = "1.0.0"
+version = "1.0.2"
 description = "Otp Ai MCP server. Tools: generate secret, generate totp, verify totp. Built by MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
