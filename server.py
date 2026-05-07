@@ -75,6 +75,16 @@ def generate_otp(secret: str, otp_type: str = "totp", digits: int = 6, period: i
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        secret (str): The secret to analyze or process.
+        otp_type (str): The otp type to analyze or process.
+        digits (int): The digits to analyze or process.
+        period (int): The period to analyze or process.
+        algorithm (str): The algorithm to analyze or process.
+        counter (int): The counter to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -161,6 +171,18 @@ def verify_otp(secret: str, code: str, otp_type: str = "totp", digits: int = 6, 
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        secret (str): The secret to analyze or process.
+        code (str): The code to analyze or process.
+        otp_type (str): The otp type to analyze or process.
+        digits (int): The digits to analyze or process.
+        period (int): The period to analyze or process.
+        algorithm (str): The algorithm to analyze or process.
+        counter (int): The counter to analyze or process.
+        window (int): The window to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -258,6 +280,13 @@ def generate_secret(length: int = 20, algorithm: str = "sha1", issuer: str = "ME
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        length (int): The length to analyze or process.
+        algorithm (str): The algorithm to analyze or process.
+        issuer (str): The issuer to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -318,6 +347,16 @@ def get_qr_uri(secret: str, account: str, issuer: str = "MEOK", algorithm: str =
     When NOT to use:
         Not suitable for real-time production decision-making without
         human review of results.
+
+    Args:
+        secret (str): The secret to analyze or process.
+        account (str): The account to analyze or process.
+        issuer (str): The issuer to analyze or process.
+        algorithm (str): The algorithm to analyze or process.
+        digits (int): The digits to analyze or process.
+        period (int): The period to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
