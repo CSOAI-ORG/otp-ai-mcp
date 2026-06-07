@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Generate and verify TOTP/HOTP one-time passwords with RFC 4226/6238 compliance. — MEOK AI Labs."""
+"""
+Generate and verify TOTP/HOTP one-time passwords with RFC 4226/6238 compliance. — MEOK AI Labs."""
 
 import sys, os
-sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
 
 import json, hashlib, hmac, struct, time, base64, secrets
@@ -102,7 +102,7 @@ def generate_otp(secret: str, otp_type: str = "totp", digits: int = 6, period: i
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -200,7 +200,7 @@ def verify_otp(secret: str, code: str, otp_type: str = "totp", digits: int = 6, 
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -304,7 +304,7 @@ def generate_secret(length: int = 20, algorithm: str = "sha1", issuer: str = "ME
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -374,7 +374,7 @@ def get_qr_uri(secret: str, account: str, issuer: str = "MEOK", algorithm: str =
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return json.dumps({"error": msg, "upgrade_url": "https://meok.ai/pricing"})
+        return json.dumps({"error": msg, "upgrade_url": "https://councilof.ai"})
     if err := _rl():
         return err
 
@@ -414,5 +414,8 @@ def get_qr_uri(secret: str, account: str, issuer: str = "MEOK", algorithm: str =
     })
 
 
-if __name__ == "__main__":
+def main():
     mcp.run()
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,9 @@
+# otp-ai-mcp - Auto-trigger Rules
+
+When the user asks about otp, use otp-ai-mcp tools: generate_otp, verify_otp, generate_secret, get_qr_uri
+
+**MCP server for otp ai mcp operations**
+
+Install: `pip install otp-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

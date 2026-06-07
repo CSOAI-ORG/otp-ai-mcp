@@ -1,0 +1,25 @@
+{
+  "name": "otp-ai-mcp",
+  "title": "Otp Ai Mcp",
+  "description": "Otp Ai MCP server. Tools: generate secret, generate totp, verify totp. Built by MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "generate_otp"
+    },
+    {
+      "name": "verify_otp"
+    },
+    {
+      "name": "generate_secret"
+    },
+    {
+      "name": "get_qr_uri"
+    }
+  ]
+}
