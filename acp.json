@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "otp-ai-mcp",
+    "description": "Otp Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "otp-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "generate_otp",
+      "verify_otp",
+      "generate_secret",
+      "get_qr_uri"
+    ]
+  }
+}
