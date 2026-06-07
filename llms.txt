@@ -1,0 +1,31 @@
+# Otp Ai MCP
+
+> MEOK AI Labs — Generate and verify TOTP/HOTP codes
+
+`otp-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install otp-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx otp-ai-mcp
+```
+
+## Tools
+
+- `generate_otp` — Generate a one-time password from a base32 secret. Supports TOTP (time-based) and HOTP (counter-based).
+- `verify_otp` — Verify a one-time password against a secret. Window parameter allows for clock drift (TOTP) or counter desync (HOTP).
+- `generate_secret` — Generate a cryptographically secure random secret for OTP. Returns base32-encoded secret.
+- `get_qr_uri` — Generate an otpauth:// URI for QR code provisioning compatible with Google Authenticator, Authy, etc.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/otp-ai-mcp
+- PyPI: https://pypi.org/project/otp-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
